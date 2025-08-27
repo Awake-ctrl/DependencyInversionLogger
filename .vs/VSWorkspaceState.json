@@ -1,0 +1,9 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\tests",
+    "\\tests\\DependencyInversionLogger.Tests"
+  ],
+  "SelectedNode": "\\tests\\DependencyInversionLogger.Tests\\LoggerTests.cs",
+  "PreviewInSolutionExplorer": false
+}
