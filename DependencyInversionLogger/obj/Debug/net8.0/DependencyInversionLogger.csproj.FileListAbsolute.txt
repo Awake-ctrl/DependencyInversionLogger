@@ -26,3 +26,4 @@ C:\Users\kalle\Downloads\DependencyInversionLogger\DependencyInversionLogger\obj
 C:\Users\kalle\Downloads\DependencyInversionLogger\DependencyInversionLogger\obj\Debug\net8.0\DependencyInversionLogger.pdb
 C:\Users\kalle\Downloads\DependencyInversionLogger\DependencyInversionLogger\obj\Debug\net8.0\DependencyInversionLogger.genruntimeconfig.cache
 C:\Users\kalle\Downloads\DependencyInversionLogger\DependencyInversionLogger\obj\Debug\net8.0\ref\DependencyInversionLogger.dll
+C:\Users\kalle\Downloads\DependencyInversionLogger\DependencyInversionLogger\obj\Debug\net8.0\DependencyInversionLogger.sourcelink.json

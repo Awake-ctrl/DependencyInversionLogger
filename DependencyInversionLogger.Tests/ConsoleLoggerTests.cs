@@ -1,21 +1,41 @@
-﻿using System;
+﻿/******************************************************************************
+ * Filename    = ConsoleLoggerTests.cs
+ *
+ * Author      = Kallepally Sai Kiran
+ *
+ * Product     = DependencyInversionLogger
+ * 
+ * Project     = UnitTests
+ *
+ * Description = Unit tests for the ConsoleLogger implementation.
+ *****************************************************************************/
+
+using System;
 using System.IO;
 using DependencyInversionLogger;
 using Xunit;
 
+/// <summary>
+/// Unit tests for the <see cref="ConsoleLogger"/>.
+/// </summary>
 public class ConsoleLoggerTests : IDisposable
 {
     private readonly TextWriter _originalOut;
 
+    /// <summary>
+    /// Initializes a new instance of the test class.
+    /// Saves the original console output writer.
+    /// </summary>
     public ConsoleLoggerTests()
     {
-        // Save original Console.Out
         _originalOut = Console.Out;
     }
 
+    /// <summary>
+    /// Restores the original console output after each test.
+    /// </summary>
     public void Dispose()
     {
-        // Always restore Console.Out after each test
         Console.SetOut(_originalOut);
     }
 
@@ -47,7 +67,7 @@ public class ConsoleLoggerTests : IDisposable
     {
         var logger = new ConsoleLogger();
         var exception = Record.Exception(() => logger.Log(""));
-        Assert.Null(exception); // should not throw
+        Assert.Null(exception);
     }
 
     [Fact]
@@ -55,6 +75,6 @@ public class ConsoleLoggerTests : IDisposable
     {
         var logger = new ConsoleLogger();
         var exception = Record.Exception(() => logger.Log(null));
-        Assert.Null(exception); // logger should handle null safely
+        Assert.Null(exception);
     }
 }

@@ -1,17 +1,30 @@
-﻿// =============================
-// Dependency Inversion Logger
-// Tests for FileLogger
-// Author: Kallepally Sai Kiran (112201044)
-// =============================
+﻿/******************************************************************************
+ * Filename    = FileLoggerTests.cs
+ *
+ * Author      = Kallepally Sai Kiran
+ *
+ * Product     = DependencyInversionLogger
+ * 
+ * Project     = UnitTests
+ *
+ * Description = Unit tests for the FileLogger implementation.
+ *****************************************************************************/
 
 using System.IO;
 using DependencyInversionLogger;
 using Xunit;
 
+/// <summary>
+/// Unit tests for the <see cref="FileLogger"/>.
+/// </summary>
 public class FileLoggerTests
 {
     private readonly string logFile = "testlog.log";
 
+    /// <summary>
+    /// Initializes a new instance of the test class.
+    /// Ensures a clean state by deleting the test log file if it exists.
+    /// </summary>
     public FileLoggerTests()
     {
         if (File.Exists(logFile))
@@ -55,7 +68,7 @@ public class FileLoggerTests
         var logger = new FileLogger(logFile);
         logger.Log("");
         var content = File.ReadAllText(logFile);
-        Assert.NotNull(content); // file still valid even if empty string logged
+        Assert.NotNull(content);
     }
 
     [Fact]
