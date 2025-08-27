@@ -1,0 +1,60 @@
+# =========================
+# .NET / C# .gitignore
+# =========================
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+logs/
+*.log
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache
+.vs/
+*.dbmdl
+*.jfm
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+*.package
+packages/
+.nuget/
+
+# Rider / JetBrains
+.idea/
+*.iml
+
+# Dotnet artifacts
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.deps.json
+
+# Others
+_ReSharper*/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.bak
+*.swp
+*.tmp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
